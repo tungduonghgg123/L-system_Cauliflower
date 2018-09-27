@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/utility.h
+GL/glut.h
+-
+
+../include/xampleflower.h
+iostream
+-
+map
+-
+vector
+-
+GL/glut.h
+-
+utility.h
+-
+
+/home/duong/cauliFlower/src/main.cpp
+iostream
+-
+xampleflower.h
+/home/duong/cauliFlower/src/xampleflower.h
+GL/glut.h
+-
+
+/home/duong/cauliFlower/src/utility.cpp
+utility.h
+-
+
+/home/duong/cauliFlower/src/xampleflower.cpp
+xampleflower.h
+/home/duong/cauliFlower/src/xampleflower.h
+

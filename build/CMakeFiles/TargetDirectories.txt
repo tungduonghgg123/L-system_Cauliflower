@@ -1,0 +1,3 @@
+/home/duong/cauliFlower/build/CMakeFiles/edit_cache.dir
+/home/duong/cauliFlower/build/CMakeFiles/rebuild_cache.dir
+/home/duong/cauliFlower/build/CMakeFiles/flower.dir

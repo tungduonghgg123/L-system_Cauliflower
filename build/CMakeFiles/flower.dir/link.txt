@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/flower.dir/src/xampleflower.cpp.o CMakeFiles/flower.dir/src/main.cpp.o CMakeFiles/flower.dir/src/utility.cpp.o  -o flower -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
