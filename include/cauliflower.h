@@ -13,8 +13,10 @@ class cauliflower {
         cauliflower() {
             //do this
             anxiom = 'F';
-            sentence.push_back(anxiom);
-             rules['F'] = "FF+[+F-F-F]-[-F+F+F]";
+            sentence = anxiom;
+            //sentence.push_back(anxiom);
+             rules['F'] = "F[+mF][-mF]";
+             
             
     
 

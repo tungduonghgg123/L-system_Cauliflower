@@ -14,6 +14,7 @@ class xampleflower {
             anxiom = 'F';
             sentence.push_back(anxiom);
              rules['F'] = "FF+[+F-F-F]-[-F+F+F]";
+             //rules['F'] = "F[+F][-F]";
             
     
 
