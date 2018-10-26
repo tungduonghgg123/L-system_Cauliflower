@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1540524266 source:c:\users\phamv\desktop\test\cauli\cauliflower.cpp
+	"cauliflower.h"
+	<GL/glut.h>
+	<cmath>
+
+1540524246 c:\users\phamv\desktop\test\cauli\cauliflower.h
+	<iostream>
+	<map>
+	<vector>
+	<GL/glut.h>
+
+1426324528 c:\program files (x86)\codeblocks\mingw\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426324528 c:\program files (x86)\codeblocks\mingw\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1540493493 c:\users\phamv\desktop\test\cauli\utility.h
+	<GL/glut.h>
+	<math.h>
+
+1540493493 source:c:\users\phamv\desktop\test\cauli\utility.cpp
+	"utility.h"
+
+1540524246 source:c:\users\phamv\desktop\test\cauli\main.cpp
+	<iostream>
+	"cauliflower.h"
+	<GL/glut.h>
+	<cmath>
+
