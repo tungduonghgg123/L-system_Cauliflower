@@ -45,6 +45,8 @@
 		<Unit filename="cauliflower.cpp" />
 		<Unit filename="cauliflower.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="utility.cpp" />
+		<Unit filename="utility.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

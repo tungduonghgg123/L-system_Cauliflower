@@ -4,7 +4,7 @@
 #include <GL/glut.h>
 //#include"utility.h"
 using namespace std;
-class cauliflower {
+class cauliflower{
     private:
         char anxiom;
         map<char, string> rules;
@@ -20,4 +20,5 @@ class cauliflower {
         void generate();
         void getSentence();
         void turtle3D();
+
 };

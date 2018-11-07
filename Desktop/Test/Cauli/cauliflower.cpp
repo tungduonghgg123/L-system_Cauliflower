@@ -1,3 +1,4 @@
+#include "utility.h"
 #include "cauliflower.h"
 #include <GL/glut.h>
 #include<cmath>
@@ -26,9 +27,12 @@ void cauliflower::getSentence()
     }
     cout << endl;
 }
+
 void cauliflower::turtle3D()
 {
-    float l = 0.5f;
+    int temp = 0;
+    float l = 2;
+    float r = 0.7;
     GLdouble angle = 45;
     for (int i = 0; i < sentence.size(); i++)
     {
@@ -36,20 +40,29 @@ void cauliflower::turtle3D()
         switch(current)
         {
             case 'F':
-            {
-                glutSolidCube(2*l);
-                glTranslatef(0,l,0);
-                break;
+            {   if(temp == 0){
+                    drawCylinder(r*sqrt(2), l);
+                    glTranslatef(0,l,0);
+                    break;
+                }
+                if(temp != 0)
+                {
+                    glutSolidCube(r*2);
+                    glTranslated(0,r,0);
+                    break;
+                }
             }
             case '[':
             {
-                l /= sqrt(2);
+                temp = temp + 1;
+                r /= sqrt(2);
                 glPushMatrix();
                 break;
             }
             case ']':
             {
-                l *= sqrt(2);
+                temp = temp - 1;
+                r *= sqrt(2);
                 glPopMatrix();
                 break;
             }
@@ -76,7 +89,7 @@ void cauliflower::turtle3D()
             }
             case 'm':
             {
-                glTranslatef(0,(1+sqrt(2))*l,0);
+                glTranslatef(0,((1+sqrt(2))*r),0);
                 break;
             }
         }

@@ -10,7 +10,7 @@ using namespace std;
 cauliflower flower;
 
 float g_x = 0.0;
-float g_y = 0.0;
+float g_y = 3.0;
 float g_z = 0.0;
 float g_x_origin = 0.0;
 bool g_is_rotate = false;
@@ -22,16 +22,18 @@ void display()
     glClearColor(255, 255, 255, 0); // Set background color to white and opaque
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);         // Clear the color buffer (background)
     glLoadIdentity();
-    gluLookAt(g_x, g_y, g_z, 0, 0, 0, 0, 1, 0);
+    gluLookAt(g_x, g_y, g_z, 0, 3, 0, 0, 1, 0);
     glPushMatrix();
     flower.turtle3D();
     glPopMatrix();
     glFlush(); // Render now
     glutPostRedisplay();
 }
+
 void init()
 {
     glClearColor(255, 255, 255, 0);
+
     glEnable(GL_DEPTH_TEST);
 
     glEnable(GL_LIGHTING);
@@ -53,6 +55,7 @@ void init()
     g_x = DIS_CAM_TO_MODE*sin(g_angle1);
     g_z = DIS_CAM_TO_MODE*cos(g_angle1);
 }
+
 void MouseButton(int type_button, int state, int x, int y)
 {
     if (type_button == GLUT_LEFT_BUTTON)
@@ -70,6 +73,7 @@ void MouseButton(int type_button, int state, int x, int y)
         }
     }
 }
+
  void MouseMove(int x, int y)
 {
     if(g_is_rotate == true)
@@ -133,7 +137,6 @@ void ReShape(int width, int height)
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 }
-
 
 int main(int argc, char **argv)
 {
